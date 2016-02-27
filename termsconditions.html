@@ -8,28 +8,13 @@
 
 <body>
 
-<?php
-$conn = mysql_connect("localhost", "twa259", "twa259kv");
-mysql_select_db("airline259", $conn)
-or die ('Database not found ' . mysql_error() );
-$sql = "SELECT * FROM administrators";
-$rs = mysql_query($sql, $conn)
-or die ('Problem with query' . mysql_error());
-var_dump($rs);
-?>
-
 <div id="header">
 <h1>Flights4you</h1>
 </div>
 
 <div id="nav">
  <a href="home.html">Home</a><br>
- <a href="rego.php">Passenger Registration</a><br>
- <a href="checkin.php">Passenger Check-In</a><br>
- <a href="fflogin.php">Login Page (Frequent Flyers)</a><br>
- <a href="adminlogin.php">Login Page (Administrators)</a><br>
  <a href="termsconditions.html">Terms and Conditions</a><br>
-   <a href="logout.php">Logout</a><br>
 </div>
 
 <div id="section">
